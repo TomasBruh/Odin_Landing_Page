@@ -1,0 +1,175 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 1500px;
+    margin: 0;
+}
+
+.header {
+    position: sticky;
+    width: 100%;
+    top: 0;
+    background-color: #1F2937;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 100px;
+    align-items: center;
+    z-index: 2;
+}
+
+.header .links {
+    display: flex;
+    gap: 15px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.header .logo{
+    font-size: 24px;
+    color: #F9FAF8;
+    font-weight: 700;
+}
+
+
+.footer {
+    background-color: #1F2937;
+    height: 70px;
+    z-index: 3;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#E5E7EB;
+}
+
+.movin {
+    display: flex;
+    flex-direction: column;
+    height: 1450px;
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    z-index: 1;
+    align-items: center;
+}
+
+.content {
+    flex: 1 0 200px;
+    display: flex;
+
+    align-items: center;
+    width: 100%;
+}
+
+.content.quote {
+    background-color: #E5E7EB;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.content.quote p {
+    font-size: 36px;
+}
+
+.content.quote div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items:end;
+}
+
+.quote-author {
+    text-align: right;
+    width: 50%;
+}
+
+.content.card {
+    margin: 100px 0;
+    width: 50%;
+    background-color: #3882F6;
+    flex: 1 0 100px;
+    padding: 30px 100px;
+    color: white;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+
+.content.card button {
+    padding: 8px 20px;
+    color: white;
+    background-color: #3882F6;
+    border: white solid 2px;
+    border-radius: 5px;
+}
+
+.content.headline {
+    background-color: #1F2937;
+    justify-content: center;
+    gap: 50px;
+}
+
+.content.headline p {
+    color: #E5E7EB;
+    font-size: 18px;
+}
+
+.content.headline .title {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #F9FAF8;
+}
+
+.content.headline .image-text {
+    width: 350px;
+}
+
+.content.items img {
+    width: 150px;
+    height: 150px;
+    border: 2px solid #3882F6;
+}
+
+.content.items p {
+    width: 150px;
+    text-align: center;
+}
+
+.content.items {
+    flex-direction: column;
+    padding: 50px 50px;
+    gap: 50px;
+}
+
+.content-text {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+}
+
+.content.items .container {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.image-text button {
+    background-color: #3882F6;
+    border: none;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 5px;
+}
